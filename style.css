@@ -374,3 +374,21 @@ html, body {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
+/* FIX THAT GROW TEXT BEING TOO CLOSE */
+.hero-inner h1, 
+.blog-hero-title {
+  line-height: 1.25 !important;
+  letter-spacing: -0.3px !important;
+  word-spacing: 2px !important;
+  padding-bottom: 10px !important;
+}
+
+/* Also for that exact text on phone */
+@media (max-width: 768px) {
+  .hero-inner h1 {
+    font-size: 26px !important;
+    line-height: 1.35 !important;
+    max-width: 300px;
+    margin: 0 auto 15px auto !important;
+  }
+}
