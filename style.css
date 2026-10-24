@@ -236,3 +236,42 @@ a{color:inherit;text-decoration:none}
     font-size: 14px;
   }
 }
+/* CLEAN MOBILE HEADER + FEATURED FIX */
+@media (max-width: 768px) {
+  /* 1. Hide Log In on phone to free space */
+  .login-link {
+    display: none !important;
+  }
+
+  /* 2. Make Trial button fit nicely */
+  .trial-button {
+    white-space: nowrap !important;
+    padding: 12px 18px !important;
+    font-size: 14px !important;
+    max-width: none;
+  }
+
+  /* 3. Fix that blue gap under featured image */
+  .featured-card {
+    flex-direction: column !important;
+    background: #fff !important;
+    gap: 0 !important;
+  }
+  
+  .featured-image {
+    background: transparent !important;
+    width: 100% !important;
+    line-height: 0;
+  }
+
+  .featured-image img {
+    width: 100% !important;
+    display: block;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .featured-copy {
+    background: #fff;
+    padding-top: 16px !important;
+  }
+}
