@@ -275,3 +275,102 @@ a{color:inherit;text-decoration:none}
     padding-top: 16px !important;
   }
 }
+/* ========== FINAL RESPONSIVENESS FOR ALL PHONES ========== */
+
+/* Stop side-scroll on all devices */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* ALL PHONES - 320px to 768px (iPhone SE, Samsung, iPhone) */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    padding: 10px 15px !important;
+  }
+  .main-nav {
+    display: none;
+  }
+  .login-link {
+    display: none !important;
+  }
+  .trial-button {
+    padding: 10px 16px !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+  }
+
+  /* Hero */
+  .hero-inner {
+    padding: 40px 20px !important;
+    text-align: center;
+  }
+  .hero-inner h1 {
+    font-size: 28px !important;
+    line-height: 1.2;
+  }
+
+  /* Featured - Stack */
+  .featured-card {
+    flex-direction: column !important;
+    margin: 0 15px !important;
+  }
+  .featured-image img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .featured-copy {
+    padding: 20px !important;
+  }
+
+  /* Filters */
+  .filters-inner {
+    flex-direction: column !important;
+    gap: 15px;
+    padding: 0 15px !important;
+  }
+  .search-box {
+    width: 100% !important;
+  }
+  .search-box input {
+    width: 100% !important;
+  }
+
+  /* Articles - 1 card per row on phone */
+  .article-grid {
+    grid-template-columns: 1fr !important;
+    padding: 0 15px !important;
+    gap: 20px !important;
+  }
+
+  /* Footer - Stack */
+  .footer-inner {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 30px !important;
+    padding: 30px 20px !important;
+  }
+  .footer-brand {
+    grid-column: span 2;
+  }
+}
+
+/* VERY SMALL PHONES - iPhone SE, small Samsung (320px - 375px) */
+@media (max-width: 375px) {
+  .hero-inner h1 {
+    font-size: 24px !important;
+  }
+  .footer-inner {
+    grid-template-columns: 1fr !important;
+  }
+  .footer-brand {
+    grid-column: span 1;
+  }
+}
+
+/* TABLET - iPad (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .article-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
