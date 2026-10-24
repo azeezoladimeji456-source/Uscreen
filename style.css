@@ -216,3 +216,23 @@ a{color:inherit;text-decoration:none}
     padding: 20px;
   }
 }
+/* FIX TRIAL BUTTON SHAPE ON PHONE */
+@media (max-width: 768px) {
+  .trial-button {
+    white-space: nowrap;
+    padding: 10px 14px !important;
+    font-size: 13px !important;
+    line-height: 1.2;
+    border-radius: 12px;
+    max-width: 110px;
+    text-align: center;
+  }
+
+  .navbar-actions {
+    gap: 8px;
+  }
+
+  .login-link {
+    font-size: 14px;
+  }
+}
